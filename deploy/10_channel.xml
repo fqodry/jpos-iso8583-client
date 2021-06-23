@@ -1,0 +1,13 @@
+<channel-adaptor name="isoclient-channel" class="org.jpos.q2.iso.ChannelAdaptor" logger="Q2">
+    <channel class="org.jpos.iso.channel.ASCIIChannel"
+             packager="org.jpos.iso.packager.GenericPackager"
+             header="0000">
+        <property name="host" value="localhost"/>
+        <property name="port" value="6262"/>
+        <property name="timeout" value="20000" />
+        <property name="packager-config" value="cfg/iso87ascii.xml" />
+    </channel>
+    <in>isoclient-send</in>
+    <out>isoclient-receive</out>
+    <reconnect-delay>10000</reconnect-delay>
+</channel-adaptor>

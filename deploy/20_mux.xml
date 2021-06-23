@@ -1,0 +1,5 @@
+<mux class="org.jpos.q2.iso.QMUX" logger="Q2" name="isoclient">
+    <in>isoclient-receive</in>
+    <out>isoclient-send</out>
+    <ready>isoclient-channel.ready</ready>
+</mux>
